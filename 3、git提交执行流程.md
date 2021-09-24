@@ -16,3 +16,5 @@
   + 1.3.3. 将提交到本地仓库的文件提交到git仓库
     + git push origin master(可以指定分支)
 
++ 1.4. 查看本地仓库的文件
+  + git ls-files
