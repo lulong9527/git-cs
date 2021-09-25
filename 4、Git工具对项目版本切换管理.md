@@ -8,8 +8,9 @@
 
   * 查看当前提交日志，查看提交次数
     * git log
+    * git log -10 查看最近10条提交的记录
   * 如果提交历史记录比较多，加入数字控制显示的版本记录数；并且使用 --pretty=oneline 简化输出
-    * git log --pretty=oneline      ->以一行的形式进行展示，提交的所有内容
+    * **git log --pretty=oneline**      ->以一行的形式进行展示，提交的所有内容
 
 * 1.3.  git diff HEAD -- file，比较的是工作区中的文件与版本库中文件的差异。HEAD指向的是版本库中的当前版本，而file指的是当前工作区中的文件。
 
@@ -47,8 +48,16 @@
 
     git diff HEAD:  对比版本库(未提交git commit)和版本库(git commit 提交之后)
 
-+ 1.6. 版本的回退，git reset 命令用于当前HEAD 复位到指定状态，一般用于撤销之前的一些操作（如：git add ,git commit等）
+# 2、GIt中提交的形目版本的切换
 
-  + 1.6.1 回退到上一个版本
-    + git reset --hard HEAD^ 
-      + HEAD^ ：将指针指向上一个版本，如果上上一个 HEAD^^ ,上上上一个HEAD^^^；这样记比较麻烦，如果想后退版本较多，简写为HEAD~100, 往后退100个版本（后退多少版本，波浪号后加多少数字）
+- 2.1. 版本的回退与切换，git reset 命令用于当前HEAD 复位到指定状态，一般用于撤销之前的一些操作（如：git add ,git commit等）
+  - 2.1.2.回到最新的版本
+    - git reflog    -> 用来记录用户操作的每一次命令
+    - 在使用 git reset --hard  xxx 进行选择之前提交的版本
+  - 2.1.2 回退到上一个版本
+    - git reset --hard HEAD^ 
+      - HEAD^ ：将指针指向上一个版本，如果上上一个 HEAD^^ ,上上上一个HEAD^^^；这样记比较麻烦，如果想后退版本较多，简写为HEAD~100, 往后退100个版本（后退多少版本，波浪号后加多少数字）
+  - 2.1.3 退回到指定版本
+    - git reset --hard commitid    -> commitid 指的是每次提交的id,
+      - 可先使用 git log --pretty=oneline 进行查看所用提交，
+      - 在使用 git reset --hard  xxx 进行选择提交的版本
