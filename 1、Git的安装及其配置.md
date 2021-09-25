@@ -2,7 +2,7 @@
 
 # 1、下载安装
 
-* 1.1. 官方下载地址<https://git-scm.com/downloads>，下载完成进行安装
+* 1.1 官方下载地址<https://git-scm.com/downloads>，下载完成进行安装
 
 #  2、配置
 

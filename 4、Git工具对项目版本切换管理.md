@@ -1,13 +1,18 @@
-# 1、Git工具对项目版本切换管理
+# Git工具对项目版本切换管理
+
+# 1、Git常用命令
 
 * 1.1. 前提是对此修改和提交了文件
 
-* 1.2. 
+* 1.2. 提交日志的查看 
+
   * 查看当前提交日志，查看提交次数
     * git log
-
+  * 如果提交历史记录比较多，加入数字控制显示的版本记录数；并且使用 --pretty=oneline 简化输出
+    * git log --pretty=oneline      ->以一行的形式进行展示，提交的所有内容
 
 * 1.3.  git diff HEAD -- file，比较的是工作区中的文件与版本库中文件的差异。HEAD指向的是版本库中的当前版本，而file指的是当前工作区中的文件。
+
   * git diff HEAD -- 文件名称（带尾缀）
 
 * 1.4.  git diff HEAD -- /README.md 终端打印值，各自值得是什么
@@ -41,3 +46,9 @@
     git diff --cached: 对比暂存区(git add 之后)和版本库(git commit 之后)
 
     git diff HEAD:  对比版本库(未提交git commit)和版本库(git commit 提交之后)
+
++ 1.6. 版本的回退，git reset 命令用于当前HEAD 复位到指定状态，一般用于撤销之前的一些操作（如：git add ,git commit等）
+
+  + 1.6.1 回退到上一个版本
+    + git reset --hard HEAD^ 
+      + HEAD^ ：将指针指向上一个版本，如果上上一个 HEAD^^ ,上上上一个HEAD^^^；这样记比较麻烦，如果想后退版本较多，简写为HEAD~100, 往后退100个版本（后退多少版本则再~ 后加多少数字）
