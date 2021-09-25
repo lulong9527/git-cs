@@ -1,6 +1,8 @@
 # GitHub简介与远程仓库克隆
 
-# 1、GitHub和Git的关系与区别
+# 1、GitHub简介
 
-​	简单来说，Git只是一个命令行工具，一个分布式版本控制系统。正是它在背后管理和跟踪你的代码历史版本，好比一个时光机，让你在代码出错时不至于手忙脚乱，能快速回退之前的历史版本。 类似的工具还有SVN。而GitHub是一个代码托管网站，背后使用Git作为版本管理工具（而非svn）。主要服务是将你的项目代码托管到云服务器上，而非存储在自己本地硬盘上。
++  gitHub是一个面向[开源](https://link.jianshu.com?t=https%3A%2F%2Fbaike.baidu.com%2Fitem%2F%25E5%25BC%2580%25E6%25BA%2590%2F20720669)及私有[软件](https://link.jianshu.com?t=https%3A%2F%2Fbaike.baidu.com%2Fitem%2F%25E8%25BD%25AF%25E4%25BB%25B6%2F12053)项目的托管平台，因为只支持git 作为唯一的版本库格式进行托管，故名gitHub。gitHub于2008年4月10日正式上线，除了git代码仓库托管及基本的 Web管理界面以外，还提供了订阅、讨论组、文本渲染、在线文件编辑器、协作图谱（报表）、代码片段分享（Gist）等功能。目前，其注册用户已经超过350万，托管版本数量也是非常之>. 多，其中不乏知名开源项目 [Ruby](https://link.jianshu.com?t=https%3A%2F%2Fbaike.baidu.com%2Fitem%2FRuby%2F11419) on Rails、jQuery、[python](https://link.jianshu.com?t=https%3A%2F%2Fbaike.baidu.com%2Fitem%2Fpython%2F407313) 等。
+
+# 2、远程仓库克隆
 
