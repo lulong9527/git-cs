@@ -6,7 +6,7 @@
 
 # 2、octotree插件下载安装
 
-1、下载插件
+1、下载插件（以下几个下载地址都可以下载）
 
 + 官网下载路径 <https://www.octotree.io/download>
 + 其他下载路径：<https://crxdl.com/>   当官网下载速度过慢，可在此网址搜索octotree进行下载
